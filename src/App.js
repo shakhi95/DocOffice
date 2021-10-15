@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -13,12 +13,12 @@ const App = () => {
 
     return (
         <RTL>
-            <HashRouter>
+            <BrowserRouter>
                 <ThemeProvider theme={theme}>
                     <CssBaseline />
                     <Layout />
                 </ThemeProvider>
-            </HashRouter>
+            </BrowserRouter>
         </RTL>
     );
 }

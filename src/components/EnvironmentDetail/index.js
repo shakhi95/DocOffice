@@ -17,7 +17,7 @@ const EnvironmentDetail = () => {
     const fetchList = async () => {
         setLoading(true)
         try {
-            const { data } = await axios.get(window.environmentDetail + `/${id}`);
+            const { data } = await axios.get(window.environmentDetail + `=${id}`);
             setEnvDetailsList(data);
         } catch (error) {
             console.log(error);
@@ -28,7 +28,7 @@ const EnvironmentDetail = () => {
 
     const fetchEvery10Sec = async () => {
         try {
-            const { data } = await axios.get(window.environmentDetail + `/${id}`);
+            const { data } = await axios.get(window.environmentDetail + `=${id}`);
             setEnvDetailsList(data);
         } catch (error) {
             console.log(error);
