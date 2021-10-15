@@ -21,30 +21,7 @@ const EnvironmentDetail = () => {
             setEnvDetailsList(data);
         } catch (error) {
             console.log(error);
-            setEnvDetailsList([
-                {
-                    "inQueuePeople": 1,
-                    "nowIDSick": 0,
-                    "nowSickName": "",
-                    "nowInsurName": "",
-                    "nextIDSick": 1,
-                    "nextSickName": "آقاي اخوين",
-                    "nextInsurName": "آزاد",
-                    "doctorName": "دکتر بهرام اکبرزاده",
-                    "stationName": "اتاق 1"
-                },
-                {
-                    "inQueuePeople": 1,
-                    "nowIDSick": 0,
-                    "nowSickName": "",
-                    "nowInsurName": "",
-                    "nextIDSick": 21107,
-                    "nextSickName": "آقاي مطلبي",
-                    "nextInsurName": "آزاد",
-                    "doctorName": "دکتر محمدرضا رمضان قرباني",
-                    "stationName": "اتاق 3"
-                }
-            ]);
+            setEnvDetailsList([]);
         }
         setLoading(false)
     };
@@ -91,7 +68,6 @@ const EnvironmentDetail = () => {
             {envDetailsList.map((env, inx) => {
                 return <EnvironmentDetailItem key={inx} data={env} cardCount={envDetailsList.length} />
             })}
-
         </Grid>
     )
 }
