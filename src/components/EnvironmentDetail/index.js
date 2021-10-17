@@ -64,7 +64,7 @@ const EnvironmentDetail = () => {
     }
 
     return (
-        <Grid container spacing={2} sx={{ justifyContent: "center" }}>
+        <Grid container spacing={4} sx={{ justifyContent: "center" }}>
             {envDetailsList.map((env, inx) => {
                 return <EnvironmentDetailItem key={inx} data={env} cardCount={envDetailsList.length} />
             })}
