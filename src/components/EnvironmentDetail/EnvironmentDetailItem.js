@@ -41,7 +41,7 @@ const EnvironmentDetailItem = ({ data, cardCount }) => {
                                         نوبت کنونی:
                                     </Typography>
                                     <Typography variant="h6" gutterBottom sx={{ mx: 1, fontWeight: "bold" }} >
-                                        {data.Nownobat || "--"}
+                                        {data.nowNobat || "--"}
                                     </Typography>
                                 </div>
                                 <div style={{ display: "flex", alignItems: "center" }}>
@@ -67,7 +67,7 @@ const EnvironmentDetailItem = ({ data, cardCount }) => {
                                         نوبت بعدی:
                                     </Typography>
                                     <Typography variant="h6" gutterBottom sx={{ mx: 1, fontWeight: "bold" }} >
-                                        {data.Nextnobat || "--"}
+                                        {data.nextnobat || "--"}
                                     </Typography>
                                 </div>
                                 <div style={{ display: "flex", alignItems: "center" }}>
